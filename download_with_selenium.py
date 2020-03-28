@@ -156,11 +156,10 @@ def download_images(link_file_path, download_dir, log_dir):
 if __name__ == "__main__":
     main_keywords = ['wikiart']
 
-    supplemented_keywords = ['facial expression',\
+    supplemented_keywords = ['portrait',\
                 'selfportrait',\
-                'face',\
-                'portraiit'
-                ]
+                'face'
+                            ]
 
     # test for chinese
     # main_keywords = ['高兴', '悲伤', '惊讶']
