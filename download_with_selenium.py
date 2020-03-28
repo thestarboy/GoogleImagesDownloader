@@ -28,7 +28,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-def get_image_links(main_keyword, supplemented_keywords, link_file_path, num_requested = 1000):
+def get_image_links(main_keyword, supplemented_keywords, link_file_path, num_requested = 20000):
     """get image links with selenium
     
     Args:
@@ -154,31 +154,12 @@ def download_images(link_file_path, download_dir, log_dir):
 
 
 if __name__ == "__main__":
-    main_keywords = ['neutral', 'angry', 'surprise', 'disgust', 'fear', 'happy', 'sad']
+    main_keywords = ['wikiart']
 
     supplemented_keywords = ['facial expression',\
-                'human face',\
+                'selfportrait',\
                 'face',\
-                'old face',\
-                'young face',\
-                'adult face',\
-                'child face',\
-                'woman face',\
-                'man face',\
-                'male face',\
-                'female face',\
-                'gentleman face',\
-                'lady face',\
-                'boy face',\
-                'girl face',\
-                'American face',\
-                'Chinese face',\
-                'Korean face',\
-                'Japanese face',\
-                'actor face',\
-                'actress face'\
-                'doctor face',\
-                'movie face'
+                'portraiit'
                 ]
 
     # test for chinese
